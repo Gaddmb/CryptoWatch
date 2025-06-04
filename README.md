@@ -1,7 +1,50 @@
-# Crypto Watch Tower
+# Crypto Watch - Suivi & Analyse des Cryptomonnaies
 
-Market data : `https://api.coingecko.com/api/v3/global` renvoie les stats sur les stats generales du marché crypto
+Ce projet est une application React permettant de suivre, visualiser et analyser les principales cryptomonnaies du marché grâce à l’API CoinGecko.
 
-All coins data : `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&sparkline=false&price_change_percentage=1h%2C24h%2C7d%2C14d%2C30d%2C200d%2C1y` Elle renvoie la liste des crypto-monnaies individuelles (coins) avec toutes leurs données de marché actuelles.
+## Fonctionnalités
 
-Coin price chart : `https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=usd&days=${duration}${duration > 32 ? "&interval=daily" : ""}`
+- **Tableau des cryptos** : Affichage des principales cryptomonnaies avec tri dynamique (prix, capitalisation, volume, etc.).
+- **Graphique Treemap** : Visualisation graphique de la dominance des cryptos par capitalisation.
+- **Recherche & filtre** : Possibilité de sélectionner le nombre de cryptos affichées.
+- **Affichage détaillé** : Visualisation du logo, du nom, du symbole et d’un lien direct vers CoinGecko.
+- **Responsive** : Interface adaptée à tous les écrans.
+
+## Installation
+
+1. **Cloner le projet**
+   ```bash
+   git clone <url-du-repo>
+   cd crypto_watch
+   ```
+2. **Installer les dépendances**
+   ```bash
+   npm install
+   ```
+3. **Démarrer l’application**
+   ```bash
+   npm run dev
+   ```
+   L’application sera accessible sur [http://localhost:5173](http://localhost:5173).
+
+## Scripts utiles
+
+- `npm run dev` : Démarre le serveur de développement Vite.
+- `npm run build` : Build le projet pour la production.
+- `npm run lint` : Vérifie la qualité du code avec ESLint.
+
+## Stack technique
+
+- React 18+
+- Recharts
+- Axios
+- Vite
+- Sass
+
+## Auteur
+
+Projet réalisé par Mbengi Gaddiel.
+
+---
+
+N’hésite pas à adapter selon les fonctionnalités finales de ton projet !
