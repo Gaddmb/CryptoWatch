@@ -1,24 +1,17 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Lorsque je souhaite accéder à une propriété d'un objet et vérifier si elle existe ou non, le mieux est d'utiliser l'opérateur optionnel (?.)
 
-node_modules
-dist
-dist-ssr
-*.local
+# Lorsque je souhaite afficher une valeur seulement si elle existe (par exemple, si elle n'est pas undefined ou null), j'utilise l'opérateur logique &&
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# J’utilise Vite pour mon projet React, et Vite gère automatiquement les fichiers *.module.scss comme des CSS Modules. En renommant mon fichier SCSS en .module.scss, Vite a activé le support des exports de variables SCSS via le bloc :export {}. C’est ce renommage qui a permis d’importer les variables dans mon composant React comme un objet JS. Je n’ai pas eu besoin de faire de configuration manuelle, car Vite gère déjà Sass et CSS Modules de base
+
+# Rappel pour connecte un input et un label c'est avec htmlfor et l'id du input
+
+# j'ai utilise Recharts pour pouvoir faire des graphiques dans mon projet React. Recharts est une bibliothèque de graphiques pour React qui permet de créer des graphiques interactifs et réactifs avec une API simple.Pour afficher mes données de manière visuelle. pour cela faire un npm install recharts
+
+# <GlobalChart coinsData={coinsData} />
+
+# en fait, quand tu écris <GlobalChart coinsData={coinsData} />, ce que tu fais, c’est que tu utilises un composant React (dans ce cas GlobalChart), et tu lui transmets des données.
+# Le nom coinsData que tu mets avant le = c’est le nom de la prop, c’est comme une étiquette. Tu choisis ce nom pour que le composant enfant sache comment s’appelle la donnée qu’il reçoit.
+# Et ce que tu mets entre les accolades {coinsData} après le =, c’est la valeur réelle que tu veux transmettre. Souvent, c’est une variable qui contient des données que tu as récupérées avant, par exemple depuis une API ou via un useState
+
+# ne pas oublie lorsque ej fasi un map il fait une clé unique pour chaque element
