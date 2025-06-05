@@ -15,3 +15,16 @@
 # Et ce que tu mets entre les accolades {coinsData} après le =, c’est la valeur réelle que tu veux transmettre. Souvent, c’est une variable qui contient des données que tu as récupérées avant, par exemple depuis une API ou via un useState
 
 # ne pas oublie lorsque ej fasi un map il fait une clé unique pour chaque element
+
+# toString() ➜ pour analyser un nombre (ex: compter les chiffres).
+# toLocaleString() ➜ pour afficher un nombre joliment.
+# Intl.NumberFormat() ➜ plus puissant pour contrôler décimales et langue.
+# Toujours retourner une string formatée dans priceFormater(), pour éviter .toLocaleString() dans ton JSX.
+
+# Formater un nombre
+# const numberFormatter = new Intl.NumberFormat("fr-FR", { minimumFractionDigits: 2 });
+# console.log(numberFormatter.format(123456.789)); // "123 456,79"
+
+# Formater une date
+# const dateFormatter = new Intl.DateTimeFormat("fr-FR", { dateStyle: "full", timeStyle: "short" });
+# console.log(dateFormatter.format(new Date())); // "mardi 4 juin 2025 à 14:30"

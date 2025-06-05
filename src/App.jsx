@@ -3,6 +3,7 @@ import GlobalChart from "./components/GlobalChart";
 import HearderInfos from "./components/hearderInfos";
 import Table from "./components/Table";
 import React, { useState, useEffect } from "react";
+import ToTop from "./components/ToTop";
 const App = () => {
   const [coinsData, setCoinsData] = useState([]);
 
@@ -14,6 +15,15 @@ const App = () => {
       .then((res) => {
         setCoinsData(res.data);
       });
+
+    // rappel : je fais du pure JS et je dis que si la page est scrollé de plus de 145px alors j'ajoute la classe active a la table-header sinon je l'enlève
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 145) {
+        document.querySelector(".table-header").classList.add("active");
+      } else {
+        document.querySelector(".table-header").classList.remove("active");
+      }
+    });
   }, []);
 
   return (
@@ -23,6 +33,7 @@ const App = () => {
         <GlobalChart coinsData={coinsData} />
       </header>
       <Table coinsData={coinsData} />
+      <ToTop />
     </div>
   );
 };
