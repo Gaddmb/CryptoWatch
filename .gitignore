@@ -28,3 +28,5 @@
 # Formater une date
 # const dateFormatter = new Intl.DateTimeFormat("fr-FR", { dateStyle: "full", timeStyle: "short" });
 # console.log(dateFormatter.format(new Date())); // "mardi 4 juin 2025 à 14:30"
+
+# a retenir un id ne peut pas etre uniquement des chiffres ou un nombre il peut etre un chaine de caractere
