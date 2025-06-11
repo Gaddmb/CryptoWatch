@@ -61,3 +61,5 @@ Chaque reducer vérifie le type de l’action et, si ça le concerne, retourne u
 Le state global est mis à jour.
 
 Tous les composants qui utilisent useSelector(...) pour lire ce bout d’état sont mis à jour automatiquement.
+
+L'action transite toujours par le store, qui ensuite la distribue à tous les reducers. 

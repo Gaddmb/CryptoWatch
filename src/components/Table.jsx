@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import TableLine from "./TableLine";
 import ToTop from "./ToTop";
 const Table = ({ coinsData }) => {
+  console.log(coinsData);
+
   const [orderBy, setOrderBy] = useState("");
   const [rangeNumber, setRangeNumber] = useState(100);
 

@@ -17,7 +17,7 @@ const store = configureStore({
 });
 
 createRoot(document.getElementById("root")).render(
-  //  provider vient de la bibliothèque react-redux
+  //  pour rendre le store accessible à toute l’application React.
   <Provider store={store}>
     <App />;
   </Provider>
