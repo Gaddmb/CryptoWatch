@@ -49,7 +49,10 @@ const TableLine = ({ coin, index }) => {
           </span>
           <a
             target="_blank"
-            href={"https://www.coingecko.com/fr/pi%C3%A8ces/" + coin.name}
+            href={
+              "https://www.coingecko.com/fr/pi%C3%A8ces/" +
+              coin.id.toLowerCase()
+            }
           >
             <img src="./assets/info-icon.svg" alt="ingo-icon" />
           </a>
